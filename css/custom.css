@@ -194,8 +194,6 @@ a.pure-button-primary {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding-left: 15px;
-    padding-right: 15px;
     /*margin: 2em 0 1em;*/
 }
 
@@ -320,6 +318,22 @@ img.cake-img {
   font-weight: 700;
 }
 
+/* Videos page */
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*OVERWRITES*/
 menu, ol, ul {
   padding:0px;
@@ -382,7 +396,9 @@ p, div {
     .l-box-lrg {
         border: none;
     }
-
+    .home-menu .pure-menu-heading {
+      float:left;
+    }
 }
 
 /*
@@ -394,5 +410,8 @@ p, div {
     /* We increase the header font size even more */
     .splash-head {
         font-size: 300%;
+    }
+    .home-menu .pure-menu-heading {
+      float:left;
     }
 }
